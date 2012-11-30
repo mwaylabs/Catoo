@@ -1,0 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<catoo>
+    <catalog>
+        <title>Catalog title</title>
+        <description>Catalog description</description>
+    </catalog>
+    <chapters>
+        <chapter startpage="1">Chapter title 1</chapter>
+        <chapter startpage="2">Chapter title 2</chapter>
+        <chapter startpage="4">Chapter title 3</chapter>
+    </chapters>
+</catoo>

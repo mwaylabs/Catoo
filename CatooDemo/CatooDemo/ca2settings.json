@@ -1,0 +1,40 @@
+{
+    "title"						: "TestTitel",
+    "defineMenuPresentation" 	: 1,
+    "menuPresentation"			: 0,
+    "menuInfoButton"			: 1,
+    "infoFromWeb"				: 1,
+    "infoUrl"					: "http://www.catoo.io",
+    "animationType"				: 1,
+    "pageCountVisible"			: 1,
+    "tableOfContents"			: 1,
+    "showThumbnails"            : 1,
+    "bookmarksEnabled"			: 1,
+    "catalogSearch"				: 1,
+    "ciColor"					: "#000000",
+    "ciFont"					: "HiraMinProN-W6",
+    "catalogsPath"				: "Catalogs/*",
+    "playSound"                 : 0,
+    "facebook"                  : 0,
+    "twitter"                   : 0,
+    "showSplash"                : 0,
+    "isSplashVideo"             : 0,
+    "playBackgroundSound"       : 0,
+	
+	"imageSplashDuration" 		: 1.0,
+    
+    "facebookTitleText"         : "FacebookTitle",
+    "facebookMessageText"		: "FacebookMessage",
+    "facebookLinkUrl"			: "FacebookLink",
+    
+    "twitterTitleText"          : "TwitterTitle",
+    "twitterMessageText"		: "TwitterMessage",
+    "twitterLinkUrl"            : "TwitterLink",
+    
+    "showLibVersion" 			:  1,
+    
+    "infoFlagFile"				: "Catoo.bundle/ic_info.png",
+    "galleryFlagFile"			: "Catoo.bundle/ic_product_gallery.png",
+    "videoFlagFile"             : "Catoo.bundle/ic_product_gallery.png"
+
+}

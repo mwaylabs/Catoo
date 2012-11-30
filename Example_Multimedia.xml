@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catoo>
+  <pages>
+    <page number="1" width="1191" height="1684">
+     <title>Page 1</title>
+     <description>Page 1 description</description>
+
+     <overlayItem type="video" x="50" y="50" width="1191" height="1684">
+        <url>http://www.yourcompany.com/path/to/video/file.mp4</url>
+      </overlayItem>
+
+      <overlayItem type="videopopup" x="50" y="75" width="192" height="108">
+        <infoflag x="85" y="290"></infoflag>
+        <url>http://www.yourcompany.com/path/to/video/file.mp4</url>
+      </overlayItem>
+
+      <overlayItem type="audio" x="50" y="208" width="100" height="40">
+        <url>http://www.yourcompany.com/path/to/audio/file.aac</url>
+      </overlayItem>
+
+      <overlayItem type="article" x="50" y="273" width="1091" height="400">
+        <title>My Article</title>
+        <description>This is a description for the article</description>
+        <webshop-url-pattern>http://www.mywebshopexampleurl.com</webshop-url-pattern>
+        <price currency="EUR">40.00</price>
+        <category>shoes</category>
+        <photos>
+          <photo>
+            <url>http://www.yourcompany.com/path/to/article/image.png</url>
+          </photo>
+        </photos>
+      </overlayItem>
+
+      <overlayItem type="pagelink" x="50" y="698" width="100" height="40">
+        <pagenumber>2</pagenumber>
+      </overlayItem>
+
+      <overlayItem type="map" x="50" y="763" width="1091" height="250" />
+
+      <overlayItem type="url" x="50" y="1038" width="100" height="40">
+        <url>http://www.yourcompany.com</url>
+      </overlayItem>
+
+    </page>
+  </pages>
+</catoo>

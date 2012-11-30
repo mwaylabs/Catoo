@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:ca2="http://catoo.io">
+  <xs:element name="catoo" >
+    <xs:complexType>
+      <xs:choice>
+        <xs:group ref="metadata_group" />
+        <xs:element name="pages">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="page" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="metadata_group">
+    <xs:sequence>
+      <xs:element name="catalog" >
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="title" />
+            <xs:element ref="description" />
+            <xs:element name="pageCount" type="xs:int" minOccurs="0" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="chapters" minOccurs="0">
+        <xs:complexType>
+          <xs:choice>
+            <xs:element ref="chapter" maxOccurs="unbounded" />
+            <xs:element ref="group" maxOccurs="unbounded" />
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:group name="pagemeta_group">
+    <xs:sequence>
+      <xs:element ref="title" />
+      <xs:element ref="description" />
+      <xs:element ref="overlayItem" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:group>
+
+  <xs:group name="overlayItem_group">
+    <xs:all>
+      <xs:element ref="infoflag" minOccurs="0" />
+      <xs:element ref="title" minOccurs="0" />
+      <xs:element ref="description" minOccurs="0" />
+      <xs:element ref="url" minOccurs="0" />
+      <xs:element ref="properties" minOccurs="0" />
+      <xs:element ref="webshop-url-pattern" minOccurs="0" />
+      <xs:element ref="price" minOccurs="0" />
+      <xs:element ref="category" minOccurs="0" />
+      <xs:element ref="photos" minOccurs="0" />
+    </xs:all>
+  </xs:group>
+
+  <xs:element name="group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="chapter" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute name="title" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="chapter">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="startpage" type="xs:int" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="page">
+    <xs:complexType>
+      <xs:group ref="pagemeta_group" />
+
+      <xs:attribute name="number" type="xs:int" />
+      <xs:attribute name="width" type="xs:int" />
+      <xs:attribute name="height" type="xs:int" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="overlayItem">
+    <xs:complexType>
+      <xs:group ref="overlayItem_group" />
+
+      <xs:attribute name="type" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="(video|gallery|audio|article|url)" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="x" type="xs:int" />
+      <xs:attribute name="y" type="xs:int" />
+      <xs:attribute name="width" type="xs:int" />
+      <xs:attribute name="height" type="xs:int" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="title" type="xs:string" />
+  <xs:element name="description" type="xs:string" />
+  <xs:element name="url" type="xs:string" />
+  <xs:element name="webshop-url-pattern" type="xs:string" />
+  <xs:element name="category" type="xs:string" />
+
+  <xs:element name="price">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:float">
+          <xs:attribute name="currency" type="xs:string" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="infoflag">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xs:anyType">
+          <xs:attribute name="type" type="xs:string" />
+          <xs:attribute name="x" type="xs:int" />
+          <xs:attribute name="y" type="xs:int" />
+          <xs:attribute name="width" type="xs:int" />
+          <xs:attribute name="height" type="xs:int" />
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="photos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="photo" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="photo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="url" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="properties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="property" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="property">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="xs:anyType">
+          <xs:attribute name="key" type="xs:string" />
+          <xs:attribute name="value" type="xs:string" />
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

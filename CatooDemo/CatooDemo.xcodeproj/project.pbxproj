@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05453B161650E86F00A3809D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05453B151650E86F00A3809D /* MessageUI.framework */; };
+		054C215D164BA99300C02726 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054C215C164BA99300C02726 /* MapKit.framework */; };
+		054C216A164BAB8B00C02726 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054C2169164BAB8B00C02726 /* CoreLocation.framework */; };
+		054C219A164C065600C02726 /* ca2settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 054C2199164C065600C02726 /* ca2settings.json */; };
+		05F50351163012510097A4CB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F50350163012510097A4CB /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0703524015C8288800495351 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0703523F15C8288800495351 /* background.png */; };
+		0719F90C161090F800B09197 /* Catoo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0719F90B161090F800B09197 /* Catoo.bundle */; };
+		0719F90E1610917500B09197 /* CA2Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0719F90D1610917500B09197 /* CA2Library.framework */; };
+		073613C5164129140041F8EC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073613C4164129140041F8EC /* CoreMedia.framework */; };
+		0768F77A162D89E70022D371 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0768F779162D89E70022D371 /* Localizable.strings */; };
+		077D341D15C6A73800350E31 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077D341C15C6A73800350E31 /* Security.framework */; };
+		07969548161AE64300810BF1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07969547161AE64300810BF1 /* MediaPlayer.framework */; };
+		0796954B161AE65C00810BF1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0796954A161AE65C00810BF1 /* AVFoundation.framework */; };
+		0796954D161AE7DB00810BF1 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0796954C161AE7DB00810BF1 /* Twitter.framework */; };
+		07A5055516131E8300B8D71E /* Info in Resources */ = {isa = PBXBuildFile; fileRef = 07A5055416131E8300B8D71E /* Info */; };
+		07A5055816131EA100B8D71E /* splash_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A5055616131EA100B8D71E /* splash_landscape.png */; };
+		07A5055916131EA100B8D71E /* splash_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A5055716131EA100B8D71E /* splash_portrait.png */; };
+		07A5056216131F0000B8D71E /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A5055A16131F0000B8D71E /* Icon-72.png */; };
+		07A5056316131F0000B8D71E /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A5055B16131F0000B8D71E /* Icon-72@2x.png */; };
+		07A5056416131F0000B8D71E /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A5055C16131F0000B8D71E /* Icon-Small-50.png */; };
+		07A5056516131F0000B8D71E /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A5055D16131F0000B8D71E /* Icon-Small-50@2x.png */; };
+		07A5056616131F0000B8D71E /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A5055E16131F0000B8D71E /* Icon-Small.png */; };
+		07A5056716131F0000B8D71E /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A5055F16131F0000B8D71E /* Icon-Small@2x.png */; };
+		07A5056816131F0000B8D71E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A5056016131F0000B8D71E /* Icon.png */; };
+		07A5056916131F0000B8D71E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A5056116131F0000B8D71E /* Icon@2x.png */; };
+		07A5057D16131FBB00B8D71E /* Catalogs in Resources */ = {isa = PBXBuildFile; fileRef = 07A5057C16131FBB00B8D71E /* Catalogs */; };
+		3237FC771668FF9000A4E88B /* catooTutorial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3237FC761668FF9000A4E88B /* catooTutorial.mp4 */; };
+		3237FC7E1668FFB400A4E88B /* Basic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3237FC791668FFB400A4E88B /* Basic.png */; };
+		3237FC7F1668FFB400A4E88B /* BasicPlus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3237FC7A1668FFB400A4E88B /* BasicPlus.png */; };
+		3237FC801668FFB400A4E88B /* Diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 3237FC7B1668FFB400A4E88B /* Diamond.png */; };
+		3237FC811668FFB400A4E88B /* DiamondPlus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3237FC7C1668FFB400A4E88B /* DiamondPlus.png */; };
+		3237FC821668FFB400A4E88B /* Trial.png in Resources */ = {isa = PBXBuildFile; fileRef = 3237FC7D1668FFB400A4E88B /* Trial.png */; };
+		567C774F15ADBE4C0003022B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567C774E15ADBE4C0003022B /* UIKit.framework */; };
+		567C775115ADBE4C0003022B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567C775015ADBE4C0003022B /* Foundation.framework */; };
+		567C775315ADBE4C0003022B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567C775215ADBE4C0003022B /* CoreGraphics.framework */; };
+		567C775B15ADBE4C0003022B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 567C775A15ADBE4C0003022B /* main.m */; };
+		567C775F15ADBE4C0003022B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 567C775E15ADBE4C0003022B /* AppDelegate.m */; };
+		567C777015ADBEA80003022B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567C776F15ADBEA80003022B /* QuartzCore.framework */; };
+		567C777215ADBEB60003022B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567C777115ADBEB60003022B /* CFNetwork.framework */; };
+		567C777415ADBEBD0003022B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567C777315ADBEBD0003022B /* MobileCoreServices.framework */; };
+		567C777615ADBEC40003022B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567C777515ADBEC40003022B /* SystemConfiguration.framework */; };
+		567C777815ADBECC0003022B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 567C777715ADBECC0003022B /* libz.dylib */; };
+		56C9357115AEB61000594264 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C9357015AEB61000594264 /* libsqlite3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05453B151650E86F00A3809D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		054C215C164BA99300C02726 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		054C2169164BAB8B00C02726 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		054C2199164C065600C02726 /* ca2settings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ca2settings.json; sourceTree = "<group>"; };
+		05F50350163012510097A4CB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		0703523F15C8288800495351 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		0719F90B161090F800B09197 /* Catoo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Catoo.bundle; path = Framework/CA2Library.framework/Versions/A/Resources/Catoo.bundle; sourceTree = SOURCE_ROOT; };
+		0719F90D1610917500B09197 /* CA2Library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CA2Library.framework; path = Framework/CA2Library.framework; sourceTree = "<group>"; };
+		073613C4164129140041F8EC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0768F777162D89E70022D371 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = CatooDemo/Ressources/de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0768F778162D89E70022D371 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = CatooDemo/Ressources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		077D341C15C6A73800350E31 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		07969547161AE64300810BF1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0796954A161AE65C00810BF1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0796954C161AE7DB00810BF1 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		07A5055416131E8300B8D71E /* Info */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Info; path = Ressources/Info; sourceTree = "<group>"; };
+		07A5055616131EA100B8D71E /* splash_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_landscape.png; sourceTree = "<group>"; };
+		07A5055716131EA100B8D71E /* splash_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_portrait.png; sourceTree = "<group>"; };
+		07A5055A16131F0000B8D71E /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Ressources/Icons/Icon-72.png"; sourceTree = "<group>"; };
+		07A5055B16131F0000B8D71E /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "Ressources/Icons/Icon-72@2x.png"; sourceTree = "<group>"; };
+		07A5055C16131F0000B8D71E /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Ressources/Icons/Icon-Small-50.png"; sourceTree = "<group>"; };
+		07A5055D16131F0000B8D71E /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "Ressources/Icons/Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		07A5055E16131F0000B8D71E /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Ressources/Icons/Icon-Small.png"; sourceTree = "<group>"; };
+		07A5055F16131F0000B8D71E /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Ressources/Icons/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		07A5056016131F0000B8D71E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Ressources/Icons/Icon.png; sourceTree = "<group>"; };
+		07A5056116131F0000B8D71E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Ressources/Icons/Icon@2x.png"; sourceTree = "<group>"; };
+		07A5057C16131FBB00B8D71E /* Catalogs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Catalogs; path = Ressources/Catalogs; sourceTree = "<group>"; };
+		320CBF3A163ADEBD00FF5A49 /* Catoo_Software_Agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Catoo_Software_Agreement.pdf; sourceTree = "<group>"; };
+		320CBF3B163ADEBD00FF5A49 /* CatooCatalogComposer.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = CatooCatalogComposer.app; sourceTree = "<group>"; };
+		320CBF3C163ADEBD00FF5A49 /* Example.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Example.xml; sourceTree = "<group>"; };
+		320CBF3D163ADEBD00FF5A49 /* Mwaysolutions_AGB.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Mwaysolutions_AGB.pdf; sourceTree = "<group>"; };
+		320CBF3E163ADEBD00FF5A49 /* README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		3237FC761668FF9000A4E88B /* catooTutorial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = catooTutorial.mp4; path = Ressources/Videos/catooTutorial.mp4; sourceTree = "<group>"; };
+		3237FC791668FFB400A4E88B /* Basic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Basic.png; sourceTree = "<group>"; };
+		3237FC7A1668FFB400A4E88B /* BasicPlus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BasicPlus.png; sourceTree = "<group>"; };
+		3237FC7B1668FFB400A4E88B /* Diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diamond.png; sourceTree = "<group>"; };
+		3237FC7C1668FFB400A4E88B /* DiamondPlus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiamondPlus.png; sourceTree = "<group>"; };
+		3237FC7D1668FFB400A4E88B /* Trial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trial.png; sourceTree = "<group>"; };
+		567C774A15ADBE4C0003022B /* CatooDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatooDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		567C774E15ADBE4C0003022B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		567C775015ADBE4C0003022B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		567C775215ADBE4C0003022B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		567C775615ADBE4C0003022B /* CatooDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatooDemo-Info.plist"; sourceTree = "<group>"; };
+		567C775A15ADBE4C0003022B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		567C775C15ADBE4C0003022B /* CatooDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatooDemo-Prefix.pch"; sourceTree = "<group>"; };
+		567C775D15ADBE4C0003022B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		567C775E15ADBE4C0003022B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		567C776F15ADBEA80003022B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		567C777115ADBEB60003022B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		567C777315ADBEBD0003022B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		567C777515ADBEC40003022B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		567C777715ADBECC0003022B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		56C9357015AEB61000594264 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		567C774715ADBE4C0003022B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05453B161650E86F00A3809D /* MessageUI.framework in Frameworks */,
+				054C216A164BAB8B00C02726 /* CoreLocation.framework in Frameworks */,
+				054C215D164BA99300C02726 /* MapKit.framework in Frameworks */,
+				073613C5164129140041F8EC /* CoreMedia.framework in Frameworks */,
+				05F50351163012510097A4CB /* Social.framework in Frameworks */,
+				0796954D161AE7DB00810BF1 /* Twitter.framework in Frameworks */,
+				0796954B161AE65C00810BF1 /* AVFoundation.framework in Frameworks */,
+				07969548161AE64300810BF1 /* MediaPlayer.framework in Frameworks */,
+				0719F90E1610917500B09197 /* CA2Library.framework in Frameworks */,
+				567C777615ADBEC40003022B /* SystemConfiguration.framework in Frameworks */,
+				567C777415ADBEBD0003022B /* MobileCoreServices.framework in Frameworks */,
+				567C777215ADBEB60003022B /* CFNetwork.framework in Frameworks */,
+				567C775315ADBE4C0003022B /* CoreGraphics.framework in Frameworks */,
+				567C777015ADBEA80003022B /* QuartzCore.framework in Frameworks */,
+				077D341D15C6A73800350E31 /* Security.framework in Frameworks */,
+				567C774F15ADBE4C0003022B /* UIKit.framework in Frameworks */,
+				567C775115ADBE4C0003022B /* Foundation.framework in Frameworks */,
+				56C9357115AEB61000594264 /* libsqlite3.0.dylib in Frameworks */,
+				567C777815ADBECC0003022B /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0703523E15C8288800495351 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3237FC781668FFA200A4E88B /* ShoppingView */,
+				0703523F15C8288800495351 /* background.png */,
+				07A5055616131EA100B8D71E /* splash_landscape.png */,
+				07A5055716131EA100B8D71E /* splash_portrait.png */,
+			);
+			name = images;
+			path = Ressources/images;
+			sourceTree = "<group>";
+		};
+		0799F59015D0101600B0926E /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				07A5056016131F0000B8D71E /* Icon.png */,
+				07A5056116131F0000B8D71E /* Icon@2x.png */,
+				07A5055A16131F0000B8D71E /* Icon-72.png */,
+				07A5055B16131F0000B8D71E /* Icon-72@2x.png */,
+				07A5055C16131F0000B8D71E /* Icon-Small-50.png */,
+				07A5055D16131F0000B8D71E /* Icon-Small-50@2x.png */,
+				07A5055E16131F0000B8D71E /* Icon-Small.png */,
+				07A5055F16131F0000B8D71E /* Icon-Small@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		320CBF39163ADEBD00FF5A49 /* Deployment */ = {
+			isa = PBXGroup;
+			children = (
+				320CBF3A163ADEBD00FF5A49 /* Catoo_Software_Agreement.pdf */,
+				320CBF3B163ADEBD00FF5A49 /* CatooCatalogComposer.app */,
+				320CBF3C163ADEBD00FF5A49 /* Example.xml */,
+				320CBF3D163ADEBD00FF5A49 /* Mwaysolutions_AGB.pdf */,
+				320CBF3E163ADEBD00FF5A49 /* README.rtf */,
+			);
+			path = Deployment;
+			sourceTree = "<group>";
+		};
+		3237FC741668FF7B00A4E88B /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				3237FC761668FF9000A4E88B /* catooTutorial.mp4 */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
+		3237FC781668FFA200A4E88B /* ShoppingView */ = {
+			isa = PBXGroup;
+			children = (
+				3237FC791668FFB400A4E88B /* Basic.png */,
+				3237FC7A1668FFB400A4E88B /* BasicPlus.png */,
+				3237FC7B1668FFB400A4E88B /* Diamond.png */,
+				3237FC7C1668FFB400A4E88B /* DiamondPlus.png */,
+				3237FC7D1668FFB400A4E88B /* Trial.png */,
+			);
+			name = ShoppingView;
+			sourceTree = "<group>";
+		};
+		567C773F15ADBE4C0003022B = {
+			isa = PBXGroup;
+			children = (
+				567C775415ADBE4C0003022B /* CatooDemo */,
+				567C778E15ADC1650003022B /* Ressources */,
+				567C774D15ADBE4C0003022B /* Frameworks */,
+				567C774B15ADBE4C0003022B /* Products */,
+				320CBF39163ADEBD00FF5A49 /* Deployment */,
+			);
+			sourceTree = "<group>";
+		};
+		567C774B15ADBE4C0003022B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				567C774A15ADBE4C0003022B /* CatooDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		567C774D15ADBE4C0003022B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05453B151650E86F00A3809D /* MessageUI.framework */,
+				054C2169164BAB8B00C02726 /* CoreLocation.framework */,
+				054C215C164BA99300C02726 /* MapKit.framework */,
+				073613C4164129140041F8EC /* CoreMedia.framework */,
+				05F50350163012510097A4CB /* Social.framework */,
+				0796954C161AE7DB00810BF1 /* Twitter.framework */,
+				0796954A161AE65C00810BF1 /* AVFoundation.framework */,
+				07969547161AE64300810BF1 /* MediaPlayer.framework */,
+				0719F90D1610917500B09197 /* CA2Library.framework */,
+				567C777515ADBEC40003022B /* SystemConfiguration.framework */,
+				567C777315ADBEBD0003022B /* MobileCoreServices.framework */,
+				567C777115ADBEB60003022B /* CFNetwork.framework */,
+				567C776F15ADBEA80003022B /* QuartzCore.framework */,
+				567C774E15ADBE4C0003022B /* UIKit.framework */,
+				567C775015ADBE4C0003022B /* Foundation.framework */,
+				567C775215ADBE4C0003022B /* CoreGraphics.framework */,
+				077D341C15C6A73800350E31 /* Security.framework */,
+				56C9357015AEB61000594264 /* libsqlite3.0.dylib */,
+				567C777715ADBECC0003022B /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		567C775415ADBE4C0003022B /* CatooDemo */ = {
+			isa = PBXGroup;
+			children = (
+				567C775D15ADBE4C0003022B /* AppDelegate.h */,
+				567C775E15ADBE4C0003022B /* AppDelegate.m */,
+				567C775515ADBE4C0003022B /* Supporting Files */,
+			);
+			path = CatooDemo;
+			sourceTree = "<group>";
+		};
+		567C775515ADBE4C0003022B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				567C775A15ADBE4C0003022B /* main.m */,
+				567C775C15ADBE4C0003022B /* CatooDemo-Prefix.pch */,
+				567C775615ADBE4C0003022B /* CatooDemo-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		567C778E15ADC1650003022B /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				3237FC741668FF7B00A4E88B /* Videos */,
+				054C2199164C065600C02726 /* ca2settings.json */,
+				0799F59015D0101600B0926E /* Icons */,
+				0703523E15C8288800495351 /* images */,
+				0768F779162D89E70022D371 /* Localizable.strings */,
+				0719F90B161090F800B09197 /* Catoo.bundle */,
+				07A5057C16131FBB00B8D71E /* Catalogs */,
+				07A5055416131E8300B8D71E /* Info */,
+			);
+			name = Ressources;
+			path = CatooDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		567C774915ADBE4C0003022B /* CatooDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 567C776215ADBE4C0003022B /* Build configuration list for PBXNativeTarget "CatooDemo" */;
+			buildPhases = (
+				567C774615ADBE4C0003022B /* Sources */,
+				567C774715ADBE4C0003022B /* Frameworks */,
+				567C774815ADBE4C0003022B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatooDemo;
+			productName = CatooDemo;
+			productReference = 567C774A15ADBE4C0003022B /* CatooDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		567C774115ADBE4C0003022B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "M-Way Solutions GmbH";
+			};
+			buildConfigurationList = 567C774415ADBE4C0003022B /* Build configuration list for PBXProject "CatooDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 567C773F15ADBE4C0003022B;
+			productRefGroup = 567C774B15ADBE4C0003022B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				567C774915ADBE4C0003022B /* CatooDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		567C774815ADBE4C0003022B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0703524015C8288800495351 /* background.png in Resources */,
+				0719F90C161090F800B09197 /* Catoo.bundle in Resources */,
+				07A5055516131E8300B8D71E /* Info in Resources */,
+				07A5055816131EA100B8D71E /* splash_landscape.png in Resources */,
+				07A5055916131EA100B8D71E /* splash_portrait.png in Resources */,
+				07A5056216131F0000B8D71E /* Icon-72.png in Resources */,
+				07A5056316131F0000B8D71E /* Icon-72@2x.png in Resources */,
+				07A5056416131F0000B8D71E /* Icon-Small-50.png in Resources */,
+				07A5056516131F0000B8D71E /* Icon-Small-50@2x.png in Resources */,
+				07A5056616131F0000B8D71E /* Icon-Small.png in Resources */,
+				07A5056716131F0000B8D71E /* Icon-Small@2x.png in Resources */,
+				07A5056816131F0000B8D71E /* Icon.png in Resources */,
+				07A5056916131F0000B8D71E /* Icon@2x.png in Resources */,
+				07A5057D16131FBB00B8D71E /* Catalogs in Resources */,
+				0768F77A162D89E70022D371 /* Localizable.strings in Resources */,
+				054C219A164C065600C02726 /* ca2settings.json in Resources */,
+				3237FC771668FF9000A4E88B /* catooTutorial.mp4 in Resources */,
+				3237FC7E1668FFB400A4E88B /* Basic.png in Resources */,
+				3237FC7F1668FFB400A4E88B /* BasicPlus.png in Resources */,
+				3237FC801668FFB400A4E88B /* Diamond.png in Resources */,
+				3237FC811668FFB400A4E88B /* DiamondPlus.png in Resources */,
+				3237FC821668FFB400A4E88B /* Trial.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		567C774615ADBE4C0003022B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				567C775B15ADBE4C0003022B /* main.m in Sources */,
+				567C775F15ADBE4C0003022B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0768F779162D89E70022D371 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0768F777162D89E70022D371 /* de */,
+				0768F778162D89E70022D371 /* en */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		567C776015ADBE4C0003022B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "i386 armv7";
+			};
+			name = Debug;
+		};
+		567C776115ADBE4C0003022B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "i386 armv7";
+			};
+			name = Release;
+		};
+		567C776315ADBE4C0003022B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatooDemo/CatooDemo-Prefix.pch";
+				INFOPLIST_FILE = "CatooDemo/CatooDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		567C776415ADBE4C0003022B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatooDemo/CatooDemo-Prefix.pch";
+				INFOPLIST_FILE = "CatooDemo/CatooDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		567C774415ADBE4C0003022B /* Build configuration list for PBXProject "CatooDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				567C776015ADBE4C0003022B /* Debug */,
+				567C776115ADBE4C0003022B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		567C776215ADBE4C0003022B /* Build configuration list for PBXNativeTarget "CatooDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				567C776315ADBE4C0003022B /* Debug */,
+				567C776415ADBE4C0003022B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 567C774115ADBE4C0003022B /* Project object */;
+}
