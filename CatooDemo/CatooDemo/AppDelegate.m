@@ -32,16 +32,16 @@
 	settings.splashImagePortraitFile  = @"splash_portrait.png";
     settings.splashImageLandscapeFile = @"splash_landscape.png";
     settings.menuPresentation = CA2MenuPresentation_Coverflow;
-
+    
     [[CA2Library sharedInstance] initializeWithSettings:settings];
 	
 	window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 	window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
-	    
+    
     controller = [[CA2Library sharedInstance] createCatalogSelectionViewController];
-
+    
     [window setRootViewController:controller];
-    	
+    
     [window makeKeyAndVisible];
     
     return YES;
